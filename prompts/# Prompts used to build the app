@@ -1,0 +1,31 @@
+Build "PingRight", a Mini CRM web app for freelancers and small businesses that tells you who to contact today.
+
+USERS & AUTH
+- Email login. Each user sees only their own data.
+
+DATA MODELS
+1. Contact: name, email, phone, company, source (Referral, Website, Social Media, Cold Outreach, Other), tags, created date, last_contacted date
+2. Deal: title, linked contact, value (INR), stage (New, Contacted, Proposal Sent, Negotiation, Won, Lost), expected close date, notes, stage_changed_date
+3. Activity: linked contact/deal, type (Call, Email, Meeting, Note), description, date. Logging an activity updates the contact's last_contacted date.
+4. Task: title, due date, linked contact/deal, status (Open, Done)
+
+PAGES
+1. Dashboard: total contacts, open deals, total pipeline value, won value this month, tasks due today, bar chart of deals by stage, and a "Talk to these 5 today" card.
+2. Pipeline: Kanban board, one column per stage, draggable deals. Each card shows title, contact name, value, and a red "Stuck" badge if the deal has been in the same stage for more than 7 days.
+3. Contacts: searchable table, filterable by source, tag and health label, with an "Add Contact" button.
+4. Contact detail: profile, health badge, linked deals, activity timeline, and a quick "log activity" form.
+5. Tasks: grouped by Overdue, Today, Upcoming, with checkboxes.
+6. Paste Chat: see feature B.
+
+FEATURE A, RELATIONSHIP HEALTH SCORE
+Label each contact: Hot (activity in last 3 days or open deal in Negotiation), Warm (4-9 days since last_contacted), Cooling (10-29 days), Cold (30+ days). Rank urgency higher for contacts with high-value open deals. The "Talk to these 5 today" card ranks contacts by urgency and shows the reason, e.g. "Rs 40,000 deal, silent for 12 days".
+
+FEATURE B, PASTE-A-CHAT
+A page with a large text box and an "Analyze with AI" button. Use the AI integration to extract JSON: customer name, phone (if present), what they want, deal value (if mentioned), suggested stage, and a suggested follow-up task with due date. Support English, Hindi and Hinglish. Show an editable preview card with a "Save" button that creates the Contact, Deal and Task in one click.
+
+DESIGN
+Clean, modern, light theme, blue accent, left sidebar. Health colors: Hot red, Warm orange, Cooling blue, Cold gray. Mobile-responsive.
+
+SEED DATA (label as "sample data")
+8 contacts with varied last_contacted dates (some today, some 15-40 days ago), 6 deals across stages (two stuck for 10+ days), a few activities, and tasks including some due today.
+
