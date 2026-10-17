@@ -4,9 +4,9 @@
 
 A simple CRM for micro-entrepreneurs (home bakers, tiffin providers, tailors, tutors) who run their business over WhatsApp and lose money when they forget to follow up.
 
-**Live demo:** <Base44 app link>
+**Live demo:** <Base44 <https://ping-right-copy-be808a05.base44.app/login"> >
 **Demo video:** <link, if you recorded one>
-**Built at:** <hack day name>, <date>, in 90 minutes
+**Built at:** <hack day , HACKTOBERFEST>, <17/10/2026>
 
 ---
 
@@ -14,7 +14,7 @@ A simple CRM for micro-entrepreneurs (home bakers, tiffin providers, tailors, tu
 
 Small sellers take orders in WhatsApp chats and track them from memory. When they forget to reply to a customer, the order is lost, and that's lost income. Normal CRMs are databases you have to keep updating, so these users never adopt them.
 
-> "<Quote from a real micro-entrepreneur you spoke to>" - <first name, type of business>
+> "<Quote from a real micro-entrepreneur you spoke to>" - <PingRight, >
 
 > "<Second quote, if you have one>" - <first name, type of business>
 
@@ -49,7 +49,7 @@ Micro-entrepreneurs who manage customers on WhatsApp: home bakers, tiffin and me
 **What the AI does:** extracts structured data from chats (and drafts messages, if you added AI Next Step).
 **What the app logic does:** health scoring, ranking, stuck-deal detection, and the money-at-risk totals.
 
-## Built With
+## Built With base44
 
 - [Base44](https://base44.com) for the database, authentication, and UI
 - Base44's AI integration for chat extraction
